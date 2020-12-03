@@ -1,7 +1,6 @@
 package base
 
 import (
-	"fmt"
 	"resk/infra"
 
 	"github.com/tietang/props/kvs"
@@ -19,5 +18,4 @@ type PropsStarter struct {
 
 func (p *PropsStarter) Init(ctx infra.StarterContext) {
 	props = ctx.Props()
-	fmt.Println("初始化配置")
 }

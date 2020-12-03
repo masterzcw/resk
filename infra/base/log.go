@@ -30,8 +30,8 @@ func init() {
 		log.SetLevel(log.DebugLevel)
 	}
 
-	log.Info("测试Info")
-	log.Debug("测试Debug")
+	// log.Info("测试Info")
+	// log.Debug("测试Debug")
 
 	/*
 		日志文件和滚动配置
