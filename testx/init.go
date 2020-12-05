@@ -1,9 +1,9 @@
 package testx
 
 import (
-	// _ "resk"
-	"resk/infra"
-	"resk/infra/base"
+	// _ "resk.com"
+	"resk.com/infra"
+	"resk.com/infra/base"
 
 	"github.com/tietang/props/ini"
 	"github.com/tietang/props/kvs"

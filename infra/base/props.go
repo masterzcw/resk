@@ -1,7 +1,7 @@
 package base
 
 import (
-	"resk/infra"
+	"resk.com/infra"
 
 	"github.com/tietang/props/kvs"
 )

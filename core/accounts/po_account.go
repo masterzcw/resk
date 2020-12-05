@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"time"
 
-	services "resk/services"
+	services "resk.com/services"
 
 	"github.com/shopspring/decimal"
 )

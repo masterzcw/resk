@@ -1,4 +1,4 @@
-module resk
+module resk.com
 
 go 1.13
 

@@ -10,6 +10,7 @@ type BootApplication struct {
 	starterContext StarterContext
 }
 
+// 创建注册机制
 func New(conf kvs.ConfigSource) *BootApplication {
 	b := &BootApplication{
 		conf:           conf,

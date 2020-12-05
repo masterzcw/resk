@@ -1,8 +1,8 @@
 package base
 
 import (
-	"resk/infra"
-	"resk/infra/logrus"
+	"resk.com/infra"
+	"resk.com/infra/logrus"
 
 	_ "github.com/go-sql-driver/mysql"
 	log "github.com/sirupsen/logrus"

@@ -1,7 +1,7 @@
 package base
 
 import (
-	"resk/infra"
+	"resk.com/infra"
 
 	"github.com/go-playground/locales/zh"
 	ut "github.com/go-playground/universal-translator"

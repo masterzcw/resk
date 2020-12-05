@@ -3,14 +3,25 @@ package services
 import (
 	"time"
 
+	"resk.com/infra/base"
+
 	"github.com/shopspring/decimal"
 )
+
+var IAccountService AccountService
+
+//用于对外暴露账户应用服务，唯一的暴露点
+func GetAccountService() AccountService {
+	base.Check(IAccountService)
+	return IAccountService
+}
 
 type AccountService interface {
 	CreateAccount(dto AccountCreatedDTO) (*AccountDTO, error)
 	Transfer(dto AccountTransferDTO) (TransferedStatus, error)
 	StoreValue(dto AccountTransferDTO) (TransferedStatus, error)
 	GetEnvelopeAccountByUserId(userId string) *AccountDTO
+	GetAccount(accountNo string) *AccountDTO
 }
 
 //账户创建对象
@@ -26,8 +37,8 @@ type AccountCreatedDTO struct {
 //转账对象
 type AccountTransferDTO struct {
 	TradeNo     string            `validate:"required"`         //交易单号 全局不重复字符或数字，唯一性标识
-	TradeBody   TradeParticipator ``                            //交易主体
-	TradeTarget TradeParticipator ``                            //交易对象
+	TradeBody   TradeParticipator `validate:"required"`         //交易主体
+	TradeTarget TradeParticipator `validate:"required"`         //交易对象
 	AmountStr   string            `validate:"required,numeric"` //交易金额,该交易涉及的金额
 	Amount      decimal.Decimal   ``                            //交易金额,该交易涉及的金额
 	ChangeType  ChangeType        `validate:"required,numeric"` //流水交易类型，0 创建账户，>0 为收入类型，<0 为支出类型，自定义

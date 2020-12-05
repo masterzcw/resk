@@ -1,8 +1,9 @@
 package base
 
 import (
-	"resk/infra"
 	"time"
+
+	"resk.com/infra"
 
 	"github.com/kataras/iris"
 	"github.com/kataras/iris/middleware/logger"

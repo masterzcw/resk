@@ -8,9 +8,9 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/tietang/dbx"
 
-	_ "resk/testx"
+	_ "resk.com/testx"
 
-	"resk/infra/base"
+	"resk.com/infra/base"
 
 	"github.com/segmentio/ksuid"
 	"github.com/smartystreets/goconvey/convey"

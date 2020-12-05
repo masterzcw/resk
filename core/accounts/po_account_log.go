@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/shopspring/decimal"
-	services "resk/services"
+	services "resk.com/services"
 )
 
 type AccountLog struct {

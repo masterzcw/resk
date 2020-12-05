@@ -3,8 +3,8 @@ package accounts
 import (
 	"testing"
 
-	"resk/infra/base"
-	"resk/services"
+	"resk.com/infra/base"
+	"resk.com/services"
 
 	"github.com/segmentio/ksuid"
 	"github.com/shopspring/decimal"
