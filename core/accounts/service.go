@@ -17,6 +17,7 @@ var _ services.AccountService = new(accountService)
 var once sync.Once
 
 func init() {
+	fmt.Println("/Users/crr/golang/resk.com/core/accounts/service.go->init()")
 	/*
 		once.Do无论这个函数被调用多少次,只执行一次
 		初始化IAccountService

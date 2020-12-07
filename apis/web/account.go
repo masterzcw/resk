@@ -1,6 +1,8 @@
 package web
 
 import (
+	"fmt"
+
 	"github.com/kataras/iris"
 	"github.com/sirupsen/logrus"
 	"resk.com/infra"
@@ -13,6 +15,7 @@ import (
 //版本号：/v1/account
 
 func init() {
+	fmt.Println("/Users/crr/golang/resk.com/apis/web/account.go->init()")
 	infra.RegisterApi(new(AccountApi))
 }
 
