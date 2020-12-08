@@ -14,10 +14,12 @@ var validate *validator.Validate
 var translator ut.Translator
 
 func Validate() *validator.Validate {
+	Check(validate)
 	return validate
 }
 
 func Transtate() ut.Translator {
+	Check(translator)
 	return translator
 }
 
@@ -39,4 +41,22 @@ func (v *ValidatorStarter) Init(ctx infra.StarterContext) {
 	} else {
 		log.Error("没有找到翻译器")
 	}
+}
+
+func ValidateStruct(s interface{}) (err error) {
+	err = Validate().Struct(s)
+	if err != nil {
+		_, ok := err.(*validator.InvalidValidationError)
+		if ok {
+			log.Error("验证错误", err)
+		}
+		errs, ok := err.(validator.ValidationErrors)
+		if ok {
+			for _, e := range errs {
+				log.Error(e.Translate(Transtate()))
+			}
+		}
+		return err
+	}
+	return nil
 }
