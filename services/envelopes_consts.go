@@ -37,8 +37,8 @@ const (
 	OrderSending                 OrderStatus = 2 // 发布
 	OrderExpired                 OrderStatus = 3 // 过期
 	OrderDisabled                OrderStatus = 4 // 失效
-	OrderExpiredRefundSuccessful OrderStatus = 5
-	OrderExpiredRefundFalured    OrderStatus = 6
+	OrderExpiredRefundSuccessful OrderStatus = 5 // 退款成功
+	OrderExpiredRefundFalured    OrderStatus = 6 // 退款失败
 )
 
 //红包类型：普通红包，碰运气红包
