@@ -3,9 +3,9 @@ package envelopes
 import (
 	"context"
 
+	"github.com/masterzcw/resk.wen/base"
 	"github.com/segmentio/ksuid"
 	"github.com/tietang/dbx"
-	"resk.com/infra/base"
 	"resk.com/services"
 )
 

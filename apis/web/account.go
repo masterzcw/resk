@@ -4,9 +4,9 @@ import (
 	"fmt"
 
 	"github.com/kataras/iris"
+	infra "github.com/masterzcw/resk.wen"
+	"github.com/masterzcw/resk.wen/base"
 	"github.com/sirupsen/logrus"
-	"resk.com/infra"
-	"resk.com/infra/base"
 	"resk.com/services"
 )
 

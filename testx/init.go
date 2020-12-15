@@ -1,9 +1,10 @@
 package testx
 
 import (
+	infra "github.com/masterzcw/resk.wen"
+	"github.com/masterzcw/resk.wen/base"
+
 	// _ "resk.com"
-	"resk.com/infra"
-	"resk.com/infra/base"
 
 	"github.com/tietang/props/ini"
 	"github.com/tietang/props/kvs"

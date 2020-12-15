@@ -10,7 +10,7 @@ import (
 
 	_ "resk.com/testx"
 
-	"resk.com/infra/base"
+	"github.com/masterzcw/resk.wen/base"
 
 	"github.com/segmentio/ksuid"
 	"github.com/smartystreets/goconvey/convey"

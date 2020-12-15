@@ -3,7 +3,7 @@ package accounts
 import (
 	"testing"
 
-	"resk.com/infra/base"
+	"github.com/masterzcw/resk.wen/base"
 	"resk.com/services"
 
 	"github.com/segmentio/ksuid"

@@ -2,8 +2,8 @@ package web
 
 import (
 	"github.com/kataras/iris"
-	"resk.com/infra"
-	"resk.com/infra/base"
+	infra "github.com/masterzcw/resk.wen"
+	"github.com/masterzcw/resk.wen/base"
 	"resk.com/services"
 )
 

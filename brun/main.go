@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
+	infra "github.com/masterzcw/resk.wen"
 	_ "resk.com"
-	"resk.com/infra"
 
 	"github.com/tietang/props/ini"
 	"github.com/tietang/props/kvs"
